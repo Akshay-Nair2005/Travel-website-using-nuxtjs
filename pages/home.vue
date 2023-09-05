@@ -1,15 +1,16 @@
 <template>
-    <div>
+    <div class="body">
         <header class="header">
             <nav class="navcontainer">
                 <a href="#"><span>T</span>ravelopedia</a>
             </nav>
             <nav class="navbar">
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/about">About</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/present">Presentation</nuxt-link></li>
                 </ul>
             </nav>
         </header>
@@ -17,10 +18,8 @@
             <div class="container">
                 <h1>Welcome to Travelopedia</h1><br>
                 <h3>Explore the World</h3><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis</p><br>
-                <a href="#">
-                    <p class="explore">Start Your Journey</p>
-                </a><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis</p><br><br>
+                <nuxt-link to="/destination" class="explore">Start Your Journey</nuxt-link>
             </div>
 
             <div class="carousel-container">
@@ -96,7 +95,7 @@ body {
 .navbar {
     /* border: 2px solid white; */
     margin-top: 3.5%;
-    margin-right: 10%;
+    margin-right: 15%;
 }
 
 .navbar ul {
@@ -190,8 +189,10 @@ p {
     height: 100%;
     position: absolute;
     transform-origin: center;
-    transition: transform 0.5s;
+    transition: transform 2s;
     border-radius: 5%;
+    border: 2px solid white;
+    box-shadow: 0 0 20px orange;
 }
 
 .carousel img :hover {
