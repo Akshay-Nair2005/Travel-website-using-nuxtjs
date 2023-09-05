@@ -1,11 +1,15 @@
 <template>
-    <header>
+    <header class="header">
+        <nav class="navcontainer">
+            <a href="#"><span>T</span>ravelopedia</a>
+        </nav>
         <nav class="navbar">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
+                <li class="item"><nuxt-link to="/about">About</nuxt-link></li>
+                <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
+                <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+                <li class="item"><nuxt-link to="/present">Presentation</nuxt-link></li>
             </ul>
         </nav>
     </header>
@@ -87,6 +91,7 @@ export default {
     max-width: 1200px;
     padding: 20px;
     justify-content: center;
+    color: white;
 }
 
 .contact-form {
@@ -101,6 +106,16 @@ export default {
     /* background-color: #3e8adb; */
     margin-bottom: 0%;
     display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.contact-details a {
+    /* flex: 2; */
+    /* background-color: #3e8adb; */
+
+    color: white;
+    text-decoration: none;
 }
 
 
@@ -114,13 +129,14 @@ input,
 textarea {
     width: 50%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 3px solid orange;
     border-radius: 4px;
+    background: rgb(224, 216, 216);
 }
 
 button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 4px;
@@ -128,91 +144,78 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
-}
-
-.body {
-    font-family: Arial, sans-serif;
-    background: url('~/staticc/beach1.jpg') no-repeat center center/cover;
-    /* background-color: white; */
-    height: 100%;
-    /* ... (other existing styles) */
-    /* Remove any margin or padding from the .body element */
-    margin: 0;
-    padding: 0;
-    /* width: 100vh; */
-    /* margin: 0px; */
-    /* margin: 0; */
-    /* padding: 0px; */
-    /* border: 2px solid red; */
-    /* background-color: rgb(22, 59, 128); */
+    background-color: rgb(215, 140, 0);
 }
 
 
-header {
-    background-color: rgb(3, 34, 90);
-    position: sticky;
-    top: 0;
-    /* background: url('../page2/beach1.jpg') no-repeat center center/cover; */
-    /* opacity: 0.5; */
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
+.navcontainer {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5%;
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navcontainer a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+.navcontainer span {
+    font-size: 1.5em;
+    color: orange;
+
+}
+
 
 
 .navbar {
-    justify-content: center;
-    padding: 10px 0;
-
-    /* ... (other existing styles) */
-
-    z-index: 1000;
-    background-color: rgba(3, 34, 90, 0.9);
-    /* Add a slight background color */
-    /* z-index: 1; */
-    /* text-align: center; */
-    /* border: 2px solid red; */
+    /* border: 2px solid white; */
+    margin-top: 1.5%;
+    margin-right: 15%;
 }
 
-
-ul {
-    display: flex;
-    z-index: 1000;
+.navbar ul {
     list-style: none;
-    margin-left: 31%;
-    /* margin-top: 3%; */
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15%;
     /* border: 2px solid red; */
+    /* padding-right: 3%; */
 }
 
-li {
-    margin: 25px 15px;
-}
-
-a {
+.navbar a {
+    /* text-decoration: none; */
     color: white;
     text-decoration: none;
-    padding: 5px 15px;
+
+    /* transition: all .5s; */
 }
 
-a:hover {
-    background-color: rgb(3, 3, 71);
-    border-radius: 5px;
-    color: white;
-}
-
-.a {
-    color: white;
+.navbar a p {
     text-decoration: none;
-    padding: 5px 15px;
+    color: white;
+
+    /* transition: all .5s; */
 }
 
-.contact {
-    color: black;
-
-}
-
-.contact:hover {
-    background-color: white;
-    color: black;
-
+.navbar a:hover {
+    text-decoration: underline;
+    /* color: white; */
 }
 </style>
   

@@ -44,7 +44,7 @@
 
                 <button type="submit">Submit Review</button>
             </form>
-        </div>
+        </div><br><br>
     </div>
 </template>
   
@@ -56,6 +56,7 @@
     margin: 0;
     padding: 0;
     background-color: azure;
+    height: 100%;
 }
 
 header {
@@ -70,6 +71,7 @@ header {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
+    color: black;
 }
 
 .review {

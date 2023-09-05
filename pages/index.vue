@@ -189,8 +189,10 @@ p {
     height: 100%;
     position: absolute;
     transform-origin: center;
-    transition: transform 0.5s;
+    transition: transform 2s;
     border-radius: 5%;
+    border: 2px solid white;
+    box-shadow: 0 0 20px orange;
 }
 
 .carousel img :hover {

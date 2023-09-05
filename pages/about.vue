@@ -1,18 +1,22 @@
 <template>
     <div class="body">
-        <header>
+        <header class="header">
+            <nav class="navcontainer">
+                <a href="#"><span>T</span>ravelopedia</a>
+            </nav>
             <nav class="navbar">
                 <ul>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/destination">Destination</a></li>
-                    <li><a href="/review">Review</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/about">About</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/present">Presentation</nuxt-link></li>
                 </ul>
             </nav>
         </header>
         <div class="about-us-page">
             <section class="about-content">
-                <h1>About Us</h1>
+                <h1>About Us</h1><br>
                 <p>Welcome to Travelopedia, your trusted partner for unforgettable travel experiences.</p>
                 <p>We are a passionate team of travel enthusiasts dedicated to creating memorable journeys that cater to all
                     kinds of travelers. Whether you're an adventure seeker, a culture explorer, or a relaxation lover, we
@@ -29,27 +33,27 @@
             <br><br>
             <section class="team-members">
                 <div class="team-member">
-                    <img src="./static/c_c2.jpg" alt="Team Member 1" />
+                    <img src="./static/c_c4.jpg" alt="Team Member 1" />
                     <h3>Akshay Nair</h3>
                     <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c2.jpg" alt="Team Member 2" />
+                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
                     <h3>Amir Chaus</h3>
                     <p>Travel Specialist</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c2.jpg" alt="Team Member 2" />
+                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
                     <h3>Aaditi Bhosale</h3>
                     <p>Travel Specialist</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c2.jpg" alt="Team Member 2" />
+                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
                     <h3>Aravind Gajula</h3>
                     <p>Travel Specialist</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c2.jpg" alt="Team Member 2" />
+                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
                     <h3>Sanika Warange</h3>
                     <p>Travel Specialist</p>
                 </div>
@@ -61,13 +65,23 @@
   
 <style scoped>
 .about-us-page {
+    /* position: absolute; */
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0% auto;
     padding: 20px;
+    background: black;
+    box-shadow: 0px 0px 15px white;
+    border-radius: 15px;
+    /* border: 2px solid white; */
+    opacity: 0.85;
+    z-index: 0;
+
 }
 
 .about-content {
     margin-bottom: 40px;
+    z-index: 10;
+
 }
 
 .team-members {
@@ -77,6 +91,7 @@
     margin-bottom: 20px;
     /* border: 2px solid black; */
     /* padding-left: 5%; */
+    /* z-index: 1000000; */
 }
 
 .team-member {
@@ -97,18 +112,18 @@
 
 .team-members p {
     font-style: italic;
-    color: #777;
+    color: white;
 }
 
 h1,
 h2 {
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 p {
     line-height: 1.6;
-    color: #666;
+    color: white;
 }
 
 * {
@@ -123,13 +138,13 @@ p {
 
 .body {
     font-family: Arial, sans-serif;
-    /* background: url('~/staticc/beach1.jpg') no-repeat center center/cover; */
-    background-color: white;
-    height: 100%;
+    height: 100vh;
     /* ... (other existing styles) */
     /* Remove any margin or padding from the .body element */
     margin: 0;
     padding: 0;
+    color: white;
+    z-index: -1;
     /* width: 100vh; */
     /* margin: 0px; */
     /* margin: 0; */
@@ -139,59 +154,63 @@ p {
 }
 
 
-header {
-    background-color: rgb(3, 34, 90);
-    position: sticky;
-    top: 0;
-    /* background: url('../page2/beach1.jpg') no-repeat center center/cover; */
-    /* opacity: 0.5; */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
+.navcontainer {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+    margin-top: 1.5%;
+    margin-left: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.navcontainer a {
+    font-size: 1.3em;
+    color: white;
+    text-decoration: none;
+    margin-left: 3%;
+}
+
+.navcontainer span {
+    font-size: 1.5em;
+    color: orange;
+
+}
+
 
 
 .navbar {
-    justify-content: center;
-    padding: 10px 0;
-
-    /* ... (other existing styles) */
-
-    z-index: 1000;
-    background-color: rgba(3, 34, 90, 0.9);
-    /* Add a slight background color */
-    /* z-index: 1; */
-    /* text-align: center; */
-    /* border: 2px solid red; */
+    /* border: 2px solid white; */
+    margin-top: 1.5%;
+    margin-right: 15%;
 }
 
-
-ul {
-    display: flex;
-    z-index: 1000;
+.navbar ul {
     list-style: none;
-    margin-left: 31%;
-    /* margin-top: 3%; */
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15%;
     /* border: 2px solid red; */
+    /* padding-right: 3%; */
 }
 
-li {
-    margin: 25px 15px;
-}
-
-a {
-    color: white;
+.navbar a {
     text-decoration: none;
-    padding: 5px 15px;
+    color: white;
+    /* transition: all .5s; */
 }
 
-a:hover {
-    background-color: rgb(3, 3, 71);
-    border-radius: 5px;
-    color: white;
-}
-
-.a {
-    color: white;
-    text-decoration: none;
-    padding: 5px 15px;
+.navbar a:hover {
+    text-decoration: underline;
+    /* color: white; */
 }
 </style>
   

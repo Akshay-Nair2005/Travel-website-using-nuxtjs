@@ -1,20 +1,22 @@
 <template>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/review">Review</a></li>
-                <li><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="body">
+        <header>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/review">Review</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <div class="iframe-container">
-        <iframe :src="iframeSrc" frameborder="0" allowfullscreen class="embedded-iframe"></iframe>
-    </div>
-    <div class="pay">
-        <nuxt-link to="/payment" class="payt">Procced to Pay</nuxt-link>
+        <div class="iframe-container">
+            <iframe :src="iframeSrc" frameborder="0" allowfullscreen class="embedded-iframe"></iframe>
+        </div><br><br><br>
+        <div class="pay">
+            <nuxt-link to="/payment" class="payt">Procced to Pay</nuxt-link><br><br>
+        </div>
     </div>
 </template>
   
@@ -38,7 +40,7 @@ const iframeSrc = 'https://docs.google.com/forms/d/e/1FAIpQLSeGn5SgXeKkpycivIDia
     font-family: Arial, sans-serif;
     /* background: url('~/staticc/beach1.jpg') no-repeat center center/cover; */
     background-color: white;
-    height: 100%;
+    height: 100vh;
     /* ... (other existing styles) */
     /* Remove any margin or padding from the .body element */
     margin: 0;
@@ -116,9 +118,10 @@ a:hover {
 
 .iframe-container {
     position: relative;
-    top: 20%;
+    top: 0%;
     left: 0;
     width: 100vw;
+    background: white;
     /* 100% of viewport width */
     height: 80vh;
     /* 100% of viewport height */
@@ -133,10 +136,12 @@ a:hover {
 
 .pay {
     color: black;
+    background: white;
     /* border: 2px solid red; */
     font-size: 1em;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .payt {
@@ -145,7 +150,7 @@ a:hover {
     /* color: white; */
     border: 2px solid black;
     background-color: rgba(3, 34, 90, 0.9);
-    margin: 7%;
+    margin: 0%;
     font-size: 1.5rem;
     border-radius: 12px;
     font-family: 'Bree Serif', serif;
