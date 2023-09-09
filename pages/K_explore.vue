@@ -1,12 +1,13 @@
 <template>
     <div class="body">
+        <br><br><br>
         <div class="cover">
-            <h1 class="pack">Package Offer!!!!</h1>
+            <h3 class="pack">Package Offer!!!!</h3>
             <div class="container">
                 <div class="img">
-                    <h1>Custom Package</h1>
+                    <h1>8 Days 7 Nights</h1>
                     <p class="Desc">Enjoy your trip to fullest......</p>
-                    <p class="Rate"><strong>Rate: Rs ###</strong></p>
+                    <p class="Rate"><strong>Rate: Rs 30000</strong></p>
                 </div>
                 <div class="custom">
                     <div class="serv">
@@ -16,7 +17,8 @@
                             <!-- Your hotel description here -->
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nemo aut et molestias omnis
                             optio, sapiente quo sequi eveniet unde dolorem totam eligendi rem eos. Lorem, ipsum dolor sit
-                            amet consectetur adipisicing elit. Lorem ipsum dolor sit amet.
+                            amet consectetur adipisicing elit. Lorem ipsum dolor Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit.
                         </p>
                     </div>
                     <div class="serv">
@@ -26,8 +28,8 @@
                             <!-- Your flight description here -->
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatum obcaecati soluta eos
                             nihil, quaerat minus veritatis animi accusantium reprehenderit neque natus rerum quibusdam
-                            maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus,Lorem ipsum
-                            dolor sit amet.
+                            maxime. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor
+                            sit.
                         </p>
                     </div>
                     <div class="serv">
@@ -36,16 +38,112 @@
                         <p>
                             <!-- Your travel guide description here -->
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem sunt nesciunt recusandae
-                            odit quasi voluptatibus molestiae ipsam neque modi, minima, obcaecati excepturi nam non!
+                            odit quasi voluptatibus molestiae ipsam neque modi, minima, obcaecati excepturi nam non!lorem3
+                            L.
                         </p>
                     </div>
                 </div>
             </div>
-            <br>
+
             <!-- <a href="#">Book Now</a> -->
-            <nuxt-link to="/pay" class="a">Explore</nuxt-link>
+            <nuxt-link to="/app" class="a">Explore</nuxt-link><br><br>
             <!-- <script src="~/assets/font.js"></script> -->
-        </div>
+        </div><br><br><br>
+        <div class="cover">
+            <h3 class="pack">Package Offer!!!!</h3>
+            <div class="container">
+                <div class="img">
+                    <h1>15 Days 14 Nights</h1>
+                    <p class="Desc">Enjoy your trip to fullest......</p>
+                    <p class="Rate"><strong>Rate: Rs 45000</strong></p>
+                </div>
+                <div class="custom">
+                    <div class="serv">
+                        <img class="hotel1" src="./static/hotel1.jpg" alt="hotel">
+                        <h3>Hotel</h3>
+                        <p>
+                            <!-- Your hotel description here -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nemo aut et molestias omnis
+                            optio, sapiente quo sequi eveniet unde dolorem totam eligendi rem eos. Lorem, ipsum dolor sit
+                            amet consectetur adipisicing elit. Lorem ipsum dolor. Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.
+
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <img class="plane" src="./static/plane1.jpg" alt="plane">
+                        <h3>Flight</h3>
+                        <p>
+                            <!-- Your flight description here -->
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatum obcaecati soluta eos
+                            nihil, quaerat minus veritatis animi accusantium reprehenderit neque natus rerum quibusdam
+                            maxime. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <img class="person" src="./static/c_c4.jpg" alt="shinchan">
+                        <h3>Travel Guide</h3>
+                        <p>
+                            <!-- Your travel guide description here -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem sunt nesciunt recusandae
+                            odit quasi voluptatibus molestiae ipsam neque modi, minima, obcaecati excepturi nam non!lorem3
+                            L.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#">Book Now</a> -->
+            <nuxt-link to="/app" class="a">Explore</nuxt-link> <br><br> <br>
+            <!-- <script src="~/assets/font.js"></script> -->
+        </div><br><br><br>
+        <div class="cover">
+            <h1 class="pack">Package Offer!!!!</h1>
+            <div class="container">
+                <div class="img">
+                    <h3>4 Days 3 Nights </h3>
+                    <p class="Desc">Enjoy your trip to fullest......</p>
+                    <p class="Rate"><strong>Rate: Rs 15000</strong></p>
+                </div>
+                <div class="custom">
+                    <div class="serv">
+                        <img class="hotel1" src="./static/hotel1.jpg" alt="hotel">
+                        <h3>Hotel</h3>
+                        <p>
+                            <!-- Your hotel description here -->
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore nemo aut et molestias omnis
+                            optio, sapiente quo sequi eveniet unde dolorem totam eligendi rem eos. Lorem, ipsum dolor sit
+                            amet consectetur adipisicing elit. Lorem ipsum dolor. Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <img class="plane" src="./static/plane1.jpg" alt="plane">
+                        <h3>Flight</h3>
+                        <p>
+                            <!-- Your flight description here -->
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem voluptatum obcaecati soluta eos
+                            nihil, quaerat minus veritatis animi accusantium reprehenderit neque natus rerum quibusdam
+                            maxime. Lorem ipsum dolor sit amet Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="serv">
+                        <img class="person" src="./static/c_c4.jpg" alt="shinchan">
+                        <h3>Travel Guide</h3>
+                        <p>
+                            <!-- Your travel guide description here -->
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, autem sunt nesciunt recusandae
+                            odit quasi voluptatibus molestiae ipsam neque modi, minima, obcaecati excepturi nam non!lorem3
+                            L.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <a href="#">Book Now</a> -->
+            <nuxt-link to="/app" class="a">Explore</nuxt-link> <br> <br> <br>
+            <!-- <script src="~/assets/font.js"></script> -->
+        </div><br><br><br>
     </div>
 </template>
   
@@ -54,10 +152,11 @@
 .body {
     margin: 0px;
     padding: 0px;
-    background: url('~/staticc/kerala_bg.jpg') no-repeat center center/cover;
+    background: url('~/staticc/nature3.jpg') no-repeat center center/cover;
     color: white;
     z-index: 100;
     height: 100%;
+    /* background-image: linear-gradient(to right, #00DBDE, #FC00FF) */
     /* opacity: 0.7; */
     /* background-color: teal; */
     /* background : url('../kerala_sport.gif') no-repeat center center/cover; */
@@ -80,6 +179,8 @@
     color: azure;
     border-radius: 7px;
     z-index: 200;
+    border: 2px solid white;
+    border-radius: 15px;
     /* border: 2px solid black; */
     /* background : url('../kerala/kerala_bg1.jpg') no-repeat center center/cover; */
     /* box-shadow: 0px 0px 45px black; */
@@ -102,8 +203,9 @@
 }
 
 .img {
-    font-size: 2rem;
+    font-size: 1em;
     color: azure;
+    border: none;
     /* width: 200%; */
     /* border: 2px solid red; */
 }
@@ -143,7 +245,7 @@ p {
 
 .pack {
     margin-left: 35%;
-    font-size: 38px;
+    font-size: 25px;
     color: azure;
     transition: all 0.5s ease .1s;
     /* transition-property: background-color box-shadow;
@@ -180,6 +282,7 @@ p {
     padding: 10px 14px;
     text-align: center;
     background-color: black;
+    /* background-color: transparent; */
     color: azure;
     border: 2px solid azure;
     height: 80%;
@@ -232,7 +335,7 @@ p {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 2%;
+    margin-top: 0%;
     border: 2px solid azure;
     margin-left: 19%;
     width: 58%;

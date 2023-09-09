@@ -6,20 +6,28 @@
                 <form action="#" method="post">
                     <div class="contents">
                         <div class="form-group">
-                            <input type="text" id="cardNumber" placeholder="Enter your card number" required />
+                            <input type="text" id="cardNumber" placeholder="Enter your card number (16 digits)" required
+                                v-model="cardNumber" @input="validateCardNumber" maxlength="16" /><br><br>
+                            <span class="error" v-if="!isCardNumberValid">Invalid card number</span>
                         </div>
                         <div class="form-group">
                             <input type="text" id="name" placeholder="Enter cardholder's name" required />
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <input type="text" id="expiry" placeholder="MM / YY" required />
+                                <input type="text" id="expiry" placeholder="MM / YY" required maxlength="4" />
                             </div>
                             <div class="form-group">
-                                <input type="password" id="cvv" placeholder="CVV" required />
+                                <input type="password" id="cvv" placeholder="CVV (3 digits)" required v-model="cvv"
+                                    @input="validateCVV" maxlength="3" /><br><br>
+                                <span class="error" v-if="!isCVVValid">Invalid CVV</span>
                             </div>
                         </div>
-                        <button type="button" class="pay-btn" @click="handlePayment">Pay Now</button>
+                        <button type="button" class="pay-btn" @click="handlePayment"
+                            :disabled="!isCardNumberValid || !isCVVValid">
+                            Pay Now
+                        </button>
+                        <a href="/publish">click me</a>
                     </div>
                 </form>
             </div>
@@ -29,6 +37,7 @@
   
 <style scoped>
 /* Your CSS styles here */
+
 .cont {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -37,25 +46,30 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: white;
-    /* background: url('../pay_bg1.jpg') no-repeat center center/cover; */
+    background: url('~/staticc/nature3.jpg') no-repeat center center/cover;
+    /* background-color: black; */
+    opacity: 5;
 }
 
 .container1 {
     width: 50%;
     padding: 40px 40px;
     /* background: url('../pay_bg1.jpg') no-repeat center center/cover; */
-    border: 2px solid black;
+    /* background: url('../nature4.jpg') no-repeat center center/cover; */
+    border: 2px solid white;
     box-shadow: 0 2px 45px azure;
     border-radius: 8px;
-    background-color: white;
+    color: white;
+    background-color: black;
+    opacity: 0.85;
+    z-index: 1000;
 }
 
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
-    color: black;
+    color: white;
 }
 
 label {
@@ -65,14 +79,15 @@ label {
 input {
     width: 90%;
     padding: 10px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 4px;
     background: none;
-    color: black;
+    color: white;
+    /* color: black; */
 }
 
 input::placeholder {
-    color: black;
+    color: white;
 }
 
 .form-row {
@@ -91,14 +106,14 @@ input::placeholder {
 }
 
 .pay-btn {
-    display: black;
+    /* display: black; */
     width: 60%;
     padding: 10px;
     margin-top: 25px;
     margin-left: 12%;
     background-color: transparent;
-    border: 2px solid black;
-    color: black;
+    border: 2px solid white;
+    color: white;
     /* border: none; */
     border-radius: 4px;
     cursor: pointer;
@@ -118,15 +133,30 @@ input::placeholder {
   
 <script>
 export default {
+    data() {
+        return {
+            cardNumber: "",
+            cvv: "",
+            isCardNumberValid: false,
+            isCVVValid: false,
+        };
+    },
     methods: {
         handlePayment() {
             // Simulate successful payment for demonstration purposes
             // In a real implementation, you would handle the payment processing logic here
             // and then trigger the alert upon successful payment.
             // For demonstration, we'll just show an alert immediately.
-            alert('Payment Successful! Thank you for your payment.');
+            alert("Payment Successful! Thank you for your payment.");
+        },
+        validateCardNumber() {
+            // Check if the card number is exactly 16 digits
+            this.isCardNumberValid = /^\d{16}$/.test(this.cardNumber);
+        },
+        validateCVV() {
+            // Check if the CVV is exactly 3 digits
+            this.isCVVValid = /^\d{3}$/.test(this.cvv);
         },
     },
 };
 </script>
-  

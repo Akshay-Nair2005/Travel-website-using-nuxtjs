@@ -1,47 +1,50 @@
 <template>
-    <header class="header">
-        <nav class="navcontainer">
-            <a href="#"><span>T</span>ravelopedia</a>
-        </nav>
-        <nav class="navbar">
-            <ul>
-                <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
-                <li class="item"><nuxt-link to="/about">About</nuxt-link></li>
-                <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
-                <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
-                <li class="item"><nuxt-link to="/present">Presentation</nuxt-link></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="contact-page">
-        <section class="contact-form">
-            <h1>Contact Us</h1><br>
-            <p>Have questions or want to book a tour? Get in touch with us!</p><br>
-            <form @submit="submitForm">
-                <div class="form-group">
-                    <label for="name">Your Name</label><br>
-                    <input type="text" id="name" v-model="formData.name" required />
-                </div><br>
-                <div class="form-group">
-                    <label for="email">Email Address</label><br>
-                    <input type="email" id="email" v-model="formData.email" required />
-                </div><br>
-                <div class="form-group">
-                    <label for="message">Message</label><br>
-                    <textarea id="message" v-model="formData.message" rows="5" required></textarea>
-                </div><br>
-                <button type="submit">Submit</button>
-            </form>
-        </section>
-        <br>
-        <section class="contact-details">
-            <h2>Contact Details</h2><br>
-            <p>If you prefer other methods of communication, feel free to reach out to us:</p><br>
-            <p>Phone: <a class="contact" href="#">9993332221</a></p><br>
-            <p>Email: <a class="contact" href="#">Travelopedia65@gmail.com</a></p><br>
-            <p>Address: <a class="contact" href="#">Ramnarain Ruia College</a></p><br>
+    <div class="body">
+        <header class="header">
+            <nav class="navcontainer">
+                <a href="#"><span>T</span>ravelopedia</a>
+            </nav>
+            <nav class="navbar">
+                <ul>
+                    <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/about">About</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
+                    <li class="item"><nuxt-link to="/present">Presentation</nuxt-link></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="contact-page">
+            <section class="contact-form">
+                <h1>Contact Us</h1><br>
+                <p>Have questions or want to book a tour? Get in touch with us!</p><br>
+                <form @submit="submitForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label><br>
+                        <input type="text" id="name" v-model="formData.name" required />
+                    </div><br>
+                    <div class="form-group">
+                        <label for="email">Email Address</label><br>
+                        <input type="email" id="email" v-model="formData.email" required />
+                    </div><br>
+                    <div class="form-group">
+                        <label for="message">Message</label><br>
+                        <textarea id="message" v-model="formData.message" rows="5" required></textarea>
+                    </div><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+            <br>
+            <section class="contact-details">
+                <h2>Contact Details</h2><br>
+                <p>If you prefer other methods of communication, feel free to reach out to us:</p><br>
+                <p>Phone: <a class="contact" href="#">9993332221</a></p><br>
+                <p>Email: <a class="contact" href="#">Travelopedia65@gmail.com</a></p><br>
+                <p>Address: <a class="contact" href="#">Ramnarain Ruia College</a></p><br>
 
-        </section>
+            </section>
+        </div>
+        <br><br><br>
     </div>
 </template>
   
@@ -60,6 +63,10 @@ export default {
         submitForm() {
             // You can implement form submission logic here, like sending the form data to a backend server.
             console.log('Form submitted:', this.formData);
+
+            // Show an alert message
+            alert('Thank you for your submission! We will contact you soon.');
+
             // Reset the form fields
             this.formData = {
                 name: '',
@@ -70,6 +77,7 @@ export default {
     }
 };
 </script>
+
   
 <style scoped>
 * {
@@ -81,7 +89,10 @@ export default {
 
 }
 
-
+.body {
+    background: url('~/staticc/nature3.jpg') no-repeat center center/cover;
+    /* margin-bottom: 0; */
+}
 
 .contact-page {
     width: 100%;
@@ -129,9 +140,11 @@ input,
 textarea {
     width: 50%;
     padding: 10px;
-    border: 3px solid orange;
+    border: 3px solid white;
     border-radius: 4px;
-    background: rgb(224, 216, 216);
+    /* background: rgb(224, 216, 216); */
+    background: black;
+    color: white;
 }
 
 button {

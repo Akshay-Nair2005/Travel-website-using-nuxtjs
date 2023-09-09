@@ -17,7 +17,7 @@
         <div class="whole">
             <div class="container">
                 <h1>Welcome to Travelopedia</h1><br>
-                <h3>Explore the World</h3><br>
+                <h3>Encyclopedia For Your Destinations </h3><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel perferendis</p><br><br>
                 <nuxt-link to="/destination" class="explore">Start Your Journey</nuxt-link>
             </div>
@@ -117,6 +117,7 @@ body {
 
 .navbar a:hover {
     text-decoration: underline;
+    color: orange;
     /* color: white; */
 }
 

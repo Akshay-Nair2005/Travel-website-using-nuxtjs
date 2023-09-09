@@ -144,6 +144,7 @@ p {
     margin: 0;
     padding: 0;
     color: white;
+    background: url('~/staticc/nature3.jpg') no-repeat center center/cover;
     z-index: -1;
     /* width: 100vh; */
     /* margin: 0px; */

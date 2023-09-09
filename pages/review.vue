@@ -13,15 +13,15 @@
                 <br>
                 <div>
                     <button :class="{ active: review.likeActive }" @click="toggleLike(index)">
-                        👍 {{ review.likes }}
+                        👍🏻{{ review.likes }}
                     </button>
                     <button :class="{ active: review.dislikeActive }" @click="toggleDislike(index)">
-                        👎 {{ review.dislikes }}
+                        👎🏻 {{ review.dislikes }}
                     </button>
                     <br><br>
                     <input type="text" v-model="newComments[index]" placeholder="Write a comment...">
                     <br> <br>
-                    <button @click="addComment(index)">Add Comment</button>
+                    <button @click="addComment(index)" class="submit">Add Comment</button>
                     <br><br>
                     <ul>
                         <li v-for="comment in review.comments" :key="comment">{{ comment }}</li>
@@ -55,31 +55,37 @@
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: azure;
+    /* background-color: azure; */
     height: 100%;
+    background: url('~/staticc/nature3.jpg') no-repeat center center/cover;
 }
 
 header {
-    background-color: rgb(3, 34, 90);
-    color: #fff;
+    /* background-color: rgb(3, 34, 90); */
+    background-color: black;
+    color: orange;
     text-align: center;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    opacity: 0.85;
 }
 
 .review-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 1rem;
-    color: black;
+    /* color: black; */
+    color: white;
+    opacity: 0.9;
 }
 
 .review {
     margin-bottom: 1.5rem;
-    border: 1px solid #ccc;
+    border: 1px solid white;
     padding: 1rem;
     border-radius: 5px;
-    background-color: #fff;
+    /* background-color: #fff; */
+    background-color: black;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -92,13 +98,15 @@ header {
 }
 
 .review-container.add-review-container {
-    background-color: #f2f2f2;
+    background-color: black;
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border: 2px solid rgb(3, 34, 90);
+    border: 2px solid white;
+    opacity: 0.85;
 }
+
 
 .review-container.add-review-container h2 {
     margin-top: 0;
@@ -117,14 +125,28 @@ header {
 .review-container.add-review-container textarea {
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ccc;
+    border: 2px solid white;
     border-radius: 3px;
     font-family: Arial, sans-serif;
+    background: black;
+    color: white;
 }
+
+.review-container input[type="text"] {
+    background-color: black;
+    border: 2px solid white;
+    opacity: 0.8;
+    color: white;
+    /* width: 55%; */
+    /* height: 100%; */
+
+}
+
 
 .review-container.add-review-container button[type="submit"] {
     padding: 0.5rem 1rem;
-    background-color: rgb(3, 34, 90);
+    /* background-color: rgb(3, 34, 90); */
+    background-color: orange;
     color: #fff;
     border: none;
     border-radius: 3px;
@@ -135,13 +157,20 @@ header {
 
 /* Additional styles for review buttons and comments */
 .review button {
-    background-color: rgb(3, 34, 90);
-    color: #fff;
-    border: none;
+    /* background-color: rgb(3, 34, 90); */
+    background-color: orange;
+    color: white;
+    border: 3px solid orange;
     padding: 0.25rem 0.5rem;
     margin-right: 0.5rem;
     border-radius: 3px;
     cursor: pointer;
+}
+
+.review .submit {
+    /* background-color: rgb(3, 34, 90); */
+    background-color: orange;
+
 }
 
 .review span {
@@ -149,7 +178,8 @@ header {
 }
 
 .review input[type="text"] {
-    width: 100%;
+    width: 85%;
+    height: 100%;
 }
 
 .review button[type="submit"] {

@@ -15,7 +15,7 @@
                 <h2>From greenery to sand... From Oceans to land</h2>
                 <h2>Explore the Options</h2>
                 <br>
-                <p>Plan your dream vacation with us</p>
+                <!-- <p>Plan your dream vacation with us</p> -->
             </div>
             <br>
             <h2 class="type">International</h2>
@@ -89,13 +89,14 @@
 
 .body {
     font-family: Arial, sans-serif;
-    background: url('~/staticc/beach1.jpg') no-repeat center center/cover;
-    /* background-color: white; */
     height: 100%;
+    /* background: url('~/staticc/nature3.jpg') no-repeat center center/cover; */
+    /* margin: 0;
+    padding: 0; */
+    /* background-color: white; */
     /* ... (other existing styles) */
     /* Remove any margin or padding from the .body element */
-    margin: 0;
-    padding: 0;
+    /* opacity: 0.85; */
     /* width: 100vh; */
     /* margin: 0px; */
     /* margin: 0; */
@@ -106,9 +107,13 @@
 
 
 header {
-    background-color: rgb(3, 34, 90);
-    position: sticky;
-    top: 0;
+    /* background-color: rgb(3, 34, 90); */
+    background-color: black;
+    /* position: sticky; */
+    position: absolute;
+    top: 0%;
+    /* left: 30%; */
+    opacity: 0.75;
     /* background: url('../page2/beach1.jpg') no-repeat center center/cover; */
     /* opacity: 0.5; */
 }
@@ -118,10 +123,12 @@ header {
     justify-content: center;
     padding: 10px 0;
 
-    /* ... (other existing styles) */
 
     z-index: 1000;
-    background-color: rgba(3, 34, 90, 0.9);
+    background-color: black;
+    opacity: 0.95;
+    /* ... (other existing styles) */
+    /* background-color: rgba(3, 34, 90, 0.9); */
     /* Add a slight background color */
     /* z-index: 1; */
     /* text-align: center; */
@@ -140,6 +147,7 @@ ul {
 
 li {
     margin: 25px 15px;
+    z-index: 10;
 }
 
 a {
@@ -149,9 +157,10 @@ a {
 }
 
 a:hover {
-    background-color: rgb(3, 3, 71);
+    /* background-color: rgb(3, 3, 71); */
     border-radius: 5px;
-    color: white;
+    color: orange;
+    text-decoration: underline;
 }
 
 .a {
@@ -182,6 +191,7 @@ a:hover {
     margin-bottom: 0;
     background-color: transparent;
     display: flex;
+    margin-left: 2.5%;
 
 }
 
@@ -189,7 +199,7 @@ a:hover {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     /* font-family: 'Pacifico', cursive; */
-    color: azure;
+    color: orange;
     opacity: 0.8;
     margin-top: 5%;
     /* border: 2px solid red; */
@@ -213,21 +223,24 @@ p {
     font-size: 24px;
     font-family: 'Pacifico', cursive;
     text-align: center;
+    color: orange;
     /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 .card {
     display: block;
-    width: 25%;
-    background: url('~/staticc/beach.jpg') no-repeat center center/cover;
+    width: 30%;
+    /* background: url('~/staticc/beach.jpg') no-repeat center center/cover; */
+    background: black;
     /* background-color: rgb(3, 34, 90); */
     border-radius: 5px;
     padding: 20px 20px;
     margin: 0px 20px;
+    opacity: 0.85;
     box-shadow: 0px 0px 30px rgb(8, 8, 8);
-    border: 2px solid black;
-    color: black;
+    border: 2px solid orange;
+    color: white;
     /* box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); */
     /* background-color: transparent; */
     /* z-index: 50000; */
@@ -243,7 +256,7 @@ p {
     object-fit: cover;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 2px solid black;
+    border: 2px solid orange;
 }
 
 .card h3 {
@@ -252,6 +265,7 @@ p {
     font-weight: bold;
     text-align: center;
     text-decoration: underline;
+    color: orange;
 }
 
 .card p {
@@ -263,14 +277,14 @@ p {
 .card a {
     display: inline-block;
     background-color: transparent;
-    color: black;
+    color: white;
     font-weight: bold;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 45px;
-    border: 2px solid black;
-    margin-left: 13%;
+    border: 2px solid orange;
+    margin-left: 22%;
     width: 50%;
     text-align: center;
 }

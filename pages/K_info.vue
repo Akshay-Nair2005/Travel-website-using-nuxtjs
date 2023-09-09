@@ -325,7 +325,7 @@ header .content .cont a:hover {
   /* background-color: rgb(7, 126, 21); */
   /* margin-top: 25%; */
   background-color: green;
-  border-radius: 25%;
+  border-radius: 20%;
   padding: 30px 20px;
   margin: 0px 20px;
   box-shadow: 0px 0px 10px rgb(10, 78, 16);
@@ -383,9 +383,10 @@ header .content .cont a:hover {
   margin-top: 2%;
   width: 90%;
   border: 2px solid lightgreen;
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 0px 0px 20px rgb(126, 190, 126);
   background-color: #054708;
+  background-image: linear-gradient(to right, #054708, rgb(30, 144, 30), lightgreen)
 }
 
 .trip {
