@@ -111,7 +111,7 @@
     <div class="button">
       <!-- <a href="k_explore.vue" class="default">Book Available Packages</a> -->
       <nuxt-link to="/K_explore" class="a">Book Available Packages</nuxt-link>
-      <a href="/app" class="a">Customize your own Package</a>
+      <a href="/Hotel1" class="a">Customize your own Package</a>
     </div>
     <footer class="foot">
       <div id="footer-top" class="social-footer">
@@ -447,7 +447,7 @@ header .content .cont a:hover {
   margin-top: 30px;
   padding: 10px 20px;
   border-radius: 10px;
-  border: 2px solid rgb(1, 26, 4);
+  border: 2px solid white;
   background: rgb(1, 26, 4);
   color: white;
   outline: none;

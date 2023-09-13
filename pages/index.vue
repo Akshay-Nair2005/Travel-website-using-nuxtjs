@@ -32,6 +32,7 @@
                     <img src="./static/nature8.jpg" alt="Image 6">
                 </div>
             </div>
+
         </div>
     </div>
 </template>
@@ -75,6 +76,7 @@ body {
     margin-top: 3.5%;
     margin-left: 5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* border: 2px solid red; */
 }
 
 .navcontainer a {
@@ -96,6 +98,7 @@ body {
     /* border: 2px solid white; */
     margin-top: 3.5%;
     margin-right: 15%;
+    /* border: 2px solid red; */
 }
 
 .navbar ul {
@@ -175,6 +178,7 @@ p {
     width: 250px;
     height: 150px;
     perspective: 800px;
+    /* border: 2px solid red; */
 }
 
 .carousel {

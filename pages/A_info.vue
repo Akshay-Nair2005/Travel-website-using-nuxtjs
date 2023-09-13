@@ -2,13 +2,12 @@
     <div class="body"><br>
         <header>
             <nav>
-                <h3><span>T</span>ravelopedia</h3>
+                <h3><span>H</span>imachal Paradise</h3>
                 <ul>
                     <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
                     <li class="item"><nuxt-link to="/about">About Us</nuxt-link></li>
                     <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
                     <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
-                    <!-- <li><a href="#">Register</a></li> -->
                 </ul>
                 <i class="bi bi-three-dots"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
@@ -16,36 +15,36 @@
                     <path
                         d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                 </svg>
-            </nav><br>
+            </nav>
             <div class="content">
                 <div class="cont">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h2>Welcome to Himachal Pradesh</h2>
+                    <p>Experience the breathtaking beauty of Himachal!</p>
                     <br>
-                    <a href="https://en.wikipedia.org/wiki/Kerala" target="_blank">Know Kerala More</a>
+                    <a href="https://en.wikipedia.org/wiki/Himachal_Pradesh" target="_blank">Explore Himachal</a>
                     <br><br><br>
-                    <h3>Activites to do!!! </h3>
+                    <h3>Activities to Enjoy</h3>
                 </div>
                 <div class="cardholder">
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Backwater Cruises</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Himachal Pradesh">
+                        <h4>Trekking Adventures</h4>
+                        <p>Explore the majestic Himalayan trails!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Beach Relaxation</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Himachal Pradesh">
+                        <h4>Snowy Retreats</h4>
+                        <p>Enjoy the snowy landscapes and skiing!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Wildlife Safaris</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Himachal Pradesh">
+                        <h4>Cultural Festivals</h4>
+                        <p>Participate in vibrant local festivals!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Cultural Performances</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Himachal Pradesh">
+                        <h4>Wildlife Exploration</h4>
+                        <p>Discover the diverse wildlife of Himachal!</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
         <div class="button">
             <!-- <a href="k_explore.vue" class="default">Book Available Packages</a> -->
             <nuxt-link to="/K_explore" class="a">Book Available Packages</nuxt-link>
-            <a href="/app" class="a">Customize your own Package</a>
+            <a href="/Hotel1" class="a">Customize your own Package</a>
         </div>
         <footer class="foot">
             <div id="footer-top" class="social-footer">
@@ -176,7 +175,7 @@
     font-family: 'Poppins', sans-serif;
     z-index: 10;
     /* background: url('~/staticc/nature4.jpg') no-repeat center center/cover; */
-    background-color: #dff3e5;
+    background-color: #c3e6e6;
     /* font-family: 'Roboto', sans-serif; */
     /* border: 1px solid red; */
 }
@@ -199,7 +198,8 @@ header nav {
 }
 
 header nav h3 {
-    color: rgb(50, 148, 88);
+    color: #006666;
+    /* Teal text color */
 }
 
 header nav h3 span {
@@ -221,23 +221,27 @@ header nav ul li:nth-last-child(1) {
     background: #014917;
     border-radius: 20px;
     padding: 5px 20px;
+    background: #006666;
 }
 
 header nav ul li:nth-last-child(1):hover {
     background: rgb(30, 155, 30);
+    background: #009999;
 }
 
 header nav ul li:nth-last-child(1) a:hover {
     color: black;
+    color: white;
 }
 
 header nav ul li:nth-last-child(1) a {
     color: white;
+    /* color: #006666; */
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #05852b;
+    color: #009999;
     font-size: 17px;
     font-weight: bold;
     transition: .3s linear;
@@ -245,7 +249,7 @@ header nav ul li a {
 
 
 header nav ul li a:hover {
-    color: #014917;
+    color: white;
 
 }
 
@@ -303,8 +307,8 @@ header .content .cont a {
     margin-top: 30px;
     padding: 8px 20px;
     border-radius: 20px;
-    border: 2px solid rgb(1, 26, 4);
-    background: rgb(1, 26, 4);
+    border: 2px solid #006666;
+    background: #006666;
     color: white;
     outline: none;
     cursor: pointer;
@@ -342,6 +346,10 @@ header .content .cont a:hover {
     border: 2px solid white;
     color: white;
     opacity: 0.9;
+    background-color: #009999;
+    /* Cyan card background */
+    box-shadow: 0px 0px 10px #009999;
+    /* Cyan card shadow */
     /* background-color: #054708; */
     /* border: 2px solid rgb(3, 46, 10); */
     /* color: black; */
@@ -365,6 +373,7 @@ header .content .cont a:hover {
     border: 2px solid rgb(3, 46, 10);
     box-shadow: 0px 0px 40px rgb(167, 224, 167);
     z-index: 2;
+    border: 2px solid white;
 }
 
 .card h4 {
@@ -385,6 +394,7 @@ header .content .cont a:hover {
     padding-top: 15px;
     text-align: center;
     z-index: 2;
+    /* color: #006666; */
 }
 
 .whole {
@@ -393,9 +403,16 @@ header .content .cont a:hover {
     margin-top: 2%;
     width: 90%;
     border: 2px solid lightgreen;
-    border-radius: 10%;
+    border-radius: 7%;
     box-shadow: 0px 0px 20px rgb(126, 190, 126);
     background-color: #054708;
+    background-color: #009999;
+    background-image: linear-gradient(to right, #009999, #baf8f8);
+    /* Cyan background */
+    border: 2px solid white;
+    /* Cyan border */
+    box-shadow: 0px 0px 20px white;
+    /* Cyan shadow */
 }
 
 .trip {
@@ -411,7 +428,10 @@ header .content .cont a:hover {
 
 .trip h3 {
     font-size: 20px;
-    text-shadow: 0px 0px 10px lightgreen;
+    text-shadow: 0px 0px 10px #009999;
+    /* Cyan text shadow */
+    /* color: #006666; */
+    /* Teal text color */
 }
 
 .trip .info {
@@ -429,6 +449,11 @@ header .content .cont a:hover {
     font-size: 1.2rem;
     /* border: 1px solid red; */
     /* margin-left: 10%; */
+    text-shadow: 0px 0px 10px #009999;
+    /* Cyan text shadow */
+    font-size: 1.2rem;
+    /* color: #006666; */
+    /* Teal text color */
 }
 
 .trip .info img {
@@ -438,6 +463,10 @@ header .content .cont a:hover {
     border: 2px solid lightgreen;
     border-radius: 20px;
     box-shadow: 0px 0px 20px lightgreen;
+    border: 2px solid white;
+    /* Cyan border around images */
+    box-shadow: 0px 0px 20px #009999;
+    /* Cyan image shadow */
     /* margin-left: 60%; */
 }
 
@@ -465,13 +494,20 @@ header .content .cont a:hover {
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
+    background: #006666;
+    /* Teal background */
+    border: 2px solid white;
+    /* Teal border */
+    color: white;
     /* transition: .3s linear; */
 
 }
 
 .button .a:hover {
-    background: green;
-    border: 1px solid green;
+    background: #009999;
+    /* Cyan background on hover */
+    border: 2px solid #009999;
+    /* Cyan border on hover */
 }
 
 footer {
@@ -480,10 +516,13 @@ footer {
     margin-top: 6.35%;
     padding: 20px;
     text-align: center;
-    width: 100%
-        /* opacity: 0.6; */
-        /* z-index: ; */
-        /* border: 2px solid green; */
+    width: 100%;
+    background-color: #006666;
+    /* Teal footer background */
+    color: white;
+    /* opacity: 0.6; */
+    /* z-index: ; */
+    /* border: 2px solid green; */
 
 }
 

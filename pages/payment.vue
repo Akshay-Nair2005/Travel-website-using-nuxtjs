@@ -27,7 +27,7 @@
                             :disabled="!isCardNumberValid || !isCVVValid">
                             Pay Now
                         </button>
-                        <a href="/publish">click me</a>
+                        <!-- <a href="/hotels">click me</a> -->
                     </div>
                 </form>
             </div>

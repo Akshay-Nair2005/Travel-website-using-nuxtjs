@@ -33,29 +33,29 @@
             <br><br>
             <section class="team-members">
                 <div class="team-member">
-                    <img src="./static/c_c4.jpg" alt="Team Member 1" />
+                    <img src="./static/akshay.png" alt="Team Member 1" />
                     <h3>Akshay Nair</h3>
                     <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
+                    <img src="./static/amir.png" alt="Team Member 2" />
                     <h3>Amir Chaus</h3>
-                    <p>Travel Specialist</p>
+                    <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
+                    <img src="./static/aaditi.png" alt="Team Member 2" />
                     <h3>Aaditi Bhosale</h3>
-                    <p>Travel Specialist</p>
+                    <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
+                    <img src="./static/arvind.png" alt="Team Member 2" />
                     <h3>Aravind Gajula</h3>
-                    <p>Travel Specialist</p>
+                    <p>Founder & CEO</p>
                 </div>
                 <div class="team-member">
-                    <img src="./static/c_c4.jpg" alt="Team Member 2" />
+                    <img src="./static/sanika.png" alt="Team Member 2" />
                     <h3>Sanika Warange</h3>
-                    <p>Travel Specialist</p>
+                    <p>Founder & CEO</p>
                 </div>
                 <!-- Add more team members as needed -->
             </section>

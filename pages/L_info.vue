@@ -2,13 +2,12 @@
     <div class="body"><br>
         <header>
             <nav>
-                <h3><span>T</span>ravelopedia</h3>
+                <h3><span>L</span>ondon Explorer</h3>
                 <ul>
                     <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
                     <li class="item"><nuxt-link to="/about">About Us</nuxt-link></li>
                     <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
                     <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
-                    <!-- <li><a href="#">Register</a></li> -->
                 </ul>
                 <i class="bi bi-three-dots"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
@@ -16,36 +15,36 @@
                     <path
                         d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                 </svg>
-            </nav><br>
+            </nav>
             <div class="content">
                 <div class="cont">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h2>Welcome to London</h2>
+                    <p>Experience the rich history and culture of London!</p>
                     <br>
-                    <a href="https://en.wikipedia.org/wiki/Kerala" target="_blank">Know Kerala More</a>
+                    <a href="https://en.wikipedia.org/wiki/London" target="_blank">Explore London</a>
                     <br><br><br>
-                    <h3>Activites to do!!! </h3>
+                    <h3>Activities to Enjoy</h3>
                 </div>
                 <div class="cardholder">
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Backwater Cruises</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/london1.webp" alt="London">
+                        <h4>London Bridge</h4>
+                        <p>Visit the iconic London Bridge!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Beach Relaxation</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/london1.webp" alt="London">
+                        <h4>Museums & Galleries</h4>
+                        <p>Explore world-class museums and galleries in London!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Wildlife Safaris</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/london1.webp" alt="London">
+                        <h4>British Cuisine</h4>
+                        <p>Savor traditional British dishes in London!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Cultural Performances</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/london1.webp" alt="London">
+                        <h4>Theatre & Arts</h4>
+                        <p>Enjoy West End theatre productions and the arts scene in London!</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
         <div class="button">
             <!-- <a href="k_explore.vue" class="default">Book Available Packages</a> -->
             <nuxt-link to="/K_explore" class="a">Book Available Packages</nuxt-link>
-            <a href="/app" class="a">Customize your own Package</a>
+            <a href="/hotels" class="a">Customize your own Package</a>
         </div>
         <footer class="foot">
             <div id="footer-top" class="social-footer">
@@ -269,7 +268,7 @@ header .content::before {
     height: 80%;
     border-radius: 10px;
     background-color: #014917;
-    background: url("~/staticc/kerala_bg.jpg")no-repeat center center/cover;
+    background: url("~/staticc/Bgimage_home.webp")no-repeat center center/cover;
     /* z-index: -1; */
 
     /* border: 2px solid red; */
@@ -490,6 +489,132 @@ footer {
 
 .row {
     text-align: center;
+}
+
+.body {
+    background-color: #f2f2f2;
+    /* Light gray background */
+}
+
+header nav h3 {
+    color: #e30000;
+    /* London Red text color */
+}
+
+header nav h3 span {
+    color: #005ea6;
+    /* London Blue text color */
+}
+
+header nav ul li:nth-last-child(1) {
+    background: #005ea6;
+    /* London Blue background */
+}
+
+header nav ul li:nth-last-child(1):hover {
+    background: #0096d6;
+    /* Lighter blue background on hover */
+}
+
+header nav ul li:nth-last-child(1) a:hover {
+    color: black;
+    /* Black text color on hover */
+}
+
+header nav ul li:nth-last-child(1) a {
+    color: white;
+    /* White text color */
+}
+
+.card {
+    background-color: #e30000;
+    /* London Red card background */
+    box-shadow: 0px 0px 10px #e30000;
+    /* London Red card shadow */
+    color: white;
+    /* Red card text color */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    border: 2px solid white;
+    /* White border around images */
+    box-shadow: 0px 0px 40px #e30000;
+    /* Red image shadow */
+}
+
+.card h4 {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #005ea6;
+    /* London Blue text color */
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+    color: #005ea6;
+    /* London Blue text color */
+}
+
+.whole {
+    background-color: #e30000;
+    /* London Red background */
+    border: 2px solid white;
+    /* White border */
+    box-shadow: 0px 0px 20px #e30000;
+    /* Red shadow */
+}
+
+.trip h3 {
+    font-size: 24px;
+    text-shadow: 0px 0px 10px #e30000;
+    /* Red text shadow */
+    color: #e30000;
+    /* Red text color */
+}
+
+.trip .info .para {
+    text-shadow: 0px 0px 10px #e30000;
+    /* Red text shadow */
+    font-size: 1.2rem;
+    color: #e30000;
+    /* Red text color */
+}
+
+.trip .info img {
+    border: 2px solid white;
+    /* White border around images */
+    box-shadow: 0px 0px 20px #e30000;
+    /* Red image shadow */
+}
+
+.button .a {
+    background: #e30000;
+    /* Red background */
+    border: 2px solid white;
+    /* White border */
+    color: white;
+}
+
+.button .a:hover {
+    background: #ff6347;
+    /* Tomato red background on hover */
+    border: 2px solid #ff6347;
+    /* Tomato red border on hover */
+}
+
+footer {
+    background-color: #e30000;
+    /* Red footer background */
+    color: white;
 }
 </style>
   

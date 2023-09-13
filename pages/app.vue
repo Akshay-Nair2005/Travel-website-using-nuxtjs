@@ -14,7 +14,7 @@
         <div class="iframe-container">
             <iframe :src="iframeSrc" frameborder="0" allowfullscreen class="embedded-iframe"
                 @load="handleIframeLoad"></iframe>
-        </div><br><br><br>
+        </div><br>
         <div class="pay">
             <nuxt-link to="/payment" class="payt" :disabled="!isFormFilled">Proceed to Pay</nuxt-link><br><br>
         </div>
@@ -22,7 +22,8 @@
 </template>
   
 <script setup>
-const iframeSrc = 'https://docs.google.com/forms/d/e/1FAIpQLSeGn5SgXeKkpycivIDiaoDpnOfX5maTMmyZbL3nQxOi60I9Xw/viewform?embedded=true'; // Replace with your iframe source URL
+const iframeSrc = "https://docs.google.com/forms/d/e/1FAIpQLSfLxS_BUrFSZqdsjHx0osXqgtdBXMyZnPsmG03T9emfTjEDvA/viewform?embedded=true"; // Replace with your iframe source URL
+
 const isFormFilled = ref(false);
 
 const handleIframeLoad = () => {

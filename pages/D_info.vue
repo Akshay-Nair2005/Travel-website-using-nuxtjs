@@ -2,13 +2,12 @@
     <div class="body"><br>
         <header>
             <nav>
-                <h3><span>T</span>ravelopedia</h3>
+                <h3><span>D</span>ubai Travel</h3>
                 <ul>
                     <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
                     <li class="item"><nuxt-link to="/about">About Us</nuxt-link></li>
                     <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
                     <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
-                    <!-- <li><a href="#">Register</a></li> -->
                 </ul>
                 <i class="bi bi-three-dots"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
@@ -16,36 +15,36 @@
                     <path
                         d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                 </svg>
-            </nav><br>
+            </nav>
             <div class="content">
                 <div class="cont">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h2>Welcome to Dubai</h2>
+                    <p>Experience the wonders of Dubai!</p>
                     <br>
-                    <a href="https://en.wikipedia.org/wiki/Kerala" target="_blank">Know Kerala More</a>
+                    <a href="https://en.wikipedia.org/wiki/Dubai" target="_blank">Explore Dubai</a>
                     <br><br><br>
-                    <h3>Activites to do!!! </h3>
+                    <h3>Activities to Explore</h3>
                 </div>
                 <div class="cardholder">
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Backwater Cruises</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Dubai">
+                        <h4>Desert Safari</h4>
+                        <p>Experience the thrill of the desert!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Beach Relaxation</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Dubai">
+                        <h4>Skyscraper Views</h4>
+                        <p>Admire Dubai's stunning skyline!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Wildlife Safaris</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Dubai">
+                        <h4>Cultural Experiences</h4>
+                        <p>Discover Dubai's rich culture!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Cultural Performances</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/kerala.jpg" alt="Dubai">
+                        <h4>Shopping Extravaganza</h4>
+                        <p>Shop till you drop in Dubai!</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
         <div class="button">
             <!-- <a href="k_explore.vue" class="default">Book Available Packages</a> -->
             <nuxt-link to="/K_explore" class="a">Book Available Packages</nuxt-link>
-            <a href="/app" class="a">Customize your own Package</a>
+            <a href="/hotels" class="a">Customize your own Package</a>
         </div>
         <footer class="foot">
             <div id="footer-top" class="social-footer">
@@ -176,7 +175,8 @@
     font-family: 'Poppins', sans-serif;
     z-index: 10;
     /* background: url('~/staticc/nature4.jpg') no-repeat center center/cover; */
-    background-color: #dff3e5;
+    /* background-color: #dff3e5; */
+    background-color: #f0e68c;
     /* font-family: 'Roboto', sans-serif; */
     /* border: 1px solid red; */
 }
@@ -199,11 +199,12 @@ header nav {
 }
 
 header nav h3 {
-    color: rgb(50, 148, 88);
+    /* color: rgb(50, 148, 88); */
+    color: #4169e1;
 }
 
 header nav h3 span {
-    color: black;
+    color: #000080;
 }
 
 header nav ul {
@@ -218,26 +219,30 @@ header nav ul li {
 }
 
 header nav ul li:nth-last-child(1) {
-    background: #014917;
+    /* background: #014917; */
+    background: #000080;
     border-radius: 20px;
     padding: 5px 20px;
 }
 
 header nav ul li:nth-last-child(1):hover {
     background: rgb(30, 155, 30);
+    background: #4169e1;
 }
 
 header nav ul li:nth-last-child(1) a:hover {
     color: black;
+    color: white;
 }
 
 header nav ul li:nth-last-child(1) a {
     color: white;
+    color: #ffd700;
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #05852b;
+    color: #000080;
     font-size: 17px;
     font-weight: bold;
     transition: .3s linear;
@@ -245,7 +250,7 @@ header nav ul li a {
 
 
 header nav ul li a:hover {
-    color: #014917;
+    color: #4169e1;
 
 }
 
@@ -279,7 +284,7 @@ header .content::before {
     position: absolute;
     width: 700px;
     height: auto;
-    color: #d8fcd8;
+    color: #4169e1;
     padding: 30px;
     z-index: 30;
     font-size: 16px;
@@ -303,8 +308,8 @@ header .content .cont a {
     margin-top: 30px;
     padding: 8px 20px;
     border-radius: 20px;
-    border: 2px solid rgb(1, 26, 4);
-    background: rgb(1, 26, 4);
+    border: 2px solid #000080;
+    background: #000080;
     color: white;
     outline: none;
     cursor: pointer;
@@ -316,8 +321,8 @@ header .content .cont a {
 }
 
 header .content .cont a:hover {
-    background: green;
-    border: 1px solid green;
+    background: #000080;
+    border: 1px solid #000080;
 }
 
 
@@ -339,9 +344,13 @@ header .content .cont a:hover {
     padding: 30px 20px;
     margin: 0px 20px;
     box-shadow: 0px 0px 10px rgb(10, 78, 16);
-    border: 2px solid white;
-    color: white;
+    border: 2px solid #000080;
+    color: #000080;
     opacity: 0.9;
+    background-color: #ffd700;
+    /* Gold card background */
+    box-shadow: 0px 0px 10px #ffd700;
+    /* Gold card shadow */
     /* background-color: #054708; */
     /* border: 2px solid rgb(3, 46, 10); */
     /* color: black; */
@@ -365,6 +374,7 @@ header .content .cont a:hover {
     border: 2px solid rgb(3, 46, 10);
     box-shadow: 0px 0px 40px rgb(167, 224, 167);
     z-index: 2;
+    border: 2px solid #000080;
 }
 
 .card h4 {
@@ -375,6 +385,7 @@ header .content .cont a:hover {
     text-decoration: underline;
     z-index: 2;
     padding-top: 15px;
+    border: 2px solid #ffd700;
 }
 
 
@@ -385,6 +396,7 @@ header .content .cont a:hover {
     padding-top: 15px;
     text-align: center;
     z-index: 2;
+    color: #4169e1;
 }
 
 .whole {
@@ -393,9 +405,16 @@ header .content .cont a:hover {
     margin-top: 2%;
     width: 90%;
     border: 2px solid lightgreen;
-    border-radius: 10%;
+    border-radius: 8%;
     box-shadow: 0px 0px 20px rgb(126, 190, 126);
     background-color: #054708;
+    background-color: #ffd700;
+    background-image: linear-gradient(to right, #dcbb02, #feec86);
+
+    /* Gold background */
+    border: 2px solid #000080;
+    /* Gold border */
+    box-shadow: 0px 0px 20px #000080;
 }
 
 .trip {
@@ -405,13 +424,16 @@ header .content .cont a:hover {
     margin-left: 7%;
     margin-top: 5%;
     /* text-align: center; */
-    color: white;
+    color: #4169e1;
     /* border: 1px solid green; */
 }
 
 .trip h3 {
     font-size: 20px;
     text-shadow: 0px 0px 10px lightgreen;
+    text-shadow: 0px 0px 10px #ffd700;
+    /* Gold text shadow */
+    color: #000080;
 }
 
 .trip .info {
@@ -427,6 +449,7 @@ header .content .cont a:hover {
     width: 50%;
     text-shadow: 0px 0px 10px lightgreen;
     font-size: 1.2rem;
+    text-shadow: 0px 0px 10px #ffd700;
     /* border: 1px solid red; */
     /* margin-left: 10%; */
 }
@@ -439,6 +462,10 @@ header .content .cont a:hover {
     border-radius: 20px;
     box-shadow: 0px 0px 20px lightgreen;
     /* margin-left: 60%; */
+    border: 2px solid #000080;
+    /* Gold border around images */
+    box-shadow: 0px 0px 20px #ffd700;
+    /* Gold image shadow */
 }
 
 .trip .info img:hover {
@@ -466,12 +493,21 @@ header .content .cont a:hover {
     font-size: 13px;
     font-weight: bold;
     /* transition: .3s linear; */
+    background: #000080;
+    /* Navy blue background */
+    border: 2px solid #000080;
+    /* Navy blue border */
+    color: white;
 
 }
 
 .button .a:hover {
     background: green;
     border: 1px solid green;
+    background: #4169e1;
+    /* Royal blue background on hover */
+    border: 2px solid #4169e1;
+    /* Royal blue border on hover */
 }
 
 footer {
@@ -480,10 +516,13 @@ footer {
     margin-top: 6.35%;
     padding: 20px;
     text-align: center;
-    width: 100%
-        /* opacity: 0.6; */
-        /* z-index: ; */
-        /* border: 2px solid green; */
+    width: 100%;
+    background-color: #000080;
+    color: white;
+    /* opacity: 0.6; */
+    /* z-index: ; */
+    /* border: 2px solid green; */
+
 
 }
 

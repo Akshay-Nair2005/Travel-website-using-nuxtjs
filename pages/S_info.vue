@@ -2,13 +2,12 @@
     <div class="body"><br>
         <header>
             <nav>
-                <h3><span>T</span>ravelopedia</h3>
+                <h3><span>S</span>ingapore Explorer</h3>
                 <ul>
                     <li class="item"><nuxt-link to="/destination">Destination</nuxt-link></li>
                     <li class="item"><nuxt-link to="/about">About Us</nuxt-link></li>
                     <li class="item"><nuxt-link to="/contact">Contact</nuxt-link></li>
                     <li class="item"><nuxt-link to="/review">Review</nuxt-link></li>
-                    <!-- <li><a href="#">Register</a></li> -->
                 </ul>
                 <i class="bi bi-three-dots"></i>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots"
@@ -16,36 +15,36 @@
                     <path
                         d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
                 </svg>
-            </nav><br>
+            </nav>
             <div class="content">
                 <div class="cont">
-                    <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, mollitia.</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h2>Welcome to Singapore</h2>
+                    <p>Experience the vibrant culture and modernity of Singapore!</p>
                     <br>
-                    <a href="https://en.wikipedia.org/wiki/Kerala" target="_blank">Know Kerala More</a>
+                    <a href="https://en.wikipedia.org/wiki/Singapore" target="_blank">Explore Singapore</a>
                     <br><br><br>
-                    <h3>Activites to do!!! </h3>
+                    <h3>Activities to Enjoy</h3>
                 </div>
                 <div class="cardholder">
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Backwater Cruises</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/nature8.jpg" alt="Singapore">
+                        <h4>Merlion Park</h4>
+                        <p>Visit the iconic Merlion statue at Merlion Park!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Beach Relaxation</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/nature5.jpg" alt="Singapore">
+                        <h4>Gardens by the Bay</h4>
+                        <p>Explore the futuristic Gardens by the Bay!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Wildlife Safaris</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/nature9.jpg" alt="Singapore">
+                        <h4>Local Cuisine</h4>
+                        <p>Savor the diverse flavors of Singaporean food!</p>
                     </div>
                     <div class="card">
-                        <img src="./static/kerala.jpg" alt="Kerala">
-                        <h4>Cultural Performances</h4>
-                        <p>"Habibi, Welcome to Ponani!!!!"</p>
+                        <img src="./static/nature1.jpg" alt="Singapore">
+                        <h4>Cultural Festivals</h4>
+                        <p>Participate in the vibrant cultural festivals of Singapore!</p>
                     </div>
                 </div>
             </div>
@@ -121,7 +120,7 @@
         <div class="button">
             <!-- <a href="k_explore.vue" class="default">Book Available Packages</a> -->
             <nuxt-link to="/K_explore" class="a">Book Available Packages</nuxt-link>
-            <a href="/app" class="a">Customize your own Package</a>
+            <a href="/Hotel1" class="a">Customize your own Package</a>
         </div>
         <footer class="foot">
             <div id="footer-top" class="social-footer">
@@ -177,6 +176,7 @@
     z-index: 10;
     /* background: url('~/staticc/nature4.jpg') no-repeat center center/cover; */
     background-color: #dff3e5;
+    background-color: #ffdb58;
     /* font-family: 'Roboto', sans-serif; */
     /* border: 1px solid red; */
 }
@@ -200,10 +200,11 @@ header nav {
 
 header nav h3 {
     color: rgb(50, 148, 88);
+    color: white;
 }
 
 header nav h3 span {
-    color: black;
+    color: #ff4500;
 }
 
 header nav ul {
@@ -217,17 +218,14 @@ header nav ul li {
 
 }
 
-header nav ul li:nth-last-child(1) {
-    background: #014917;
-    border-radius: 20px;
-    padding: 5px 20px;
-}
+
 
 header nav ul li:nth-last-child(1):hover {
-    background: rgb(30, 155, 30);
+    background: #ff6347;
 }
 
 header nav ul li:nth-last-child(1) a:hover {
+    /* color: black; */
     color: black;
 }
 
@@ -237,15 +235,23 @@ header nav ul li:nth-last-child(1) a {
 
 header nav ul li a {
     text-decoration: none;
-    color: #05852b;
+    color: #ff4500;
     font-size: 17px;
     font-weight: bold;
     transition: .3s linear;
 }
 
+header nav ul li:nth-last-child(1) {
+    background: #014917;
+    border-radius: 20px;
+    padding: 5px 20px;
+    background: #ff4500;
+    color: white;
+}
+
 
 header nav ul li a:hover {
-    color: #014917;
+    color: white;
 
 }
 
@@ -271,7 +277,7 @@ header .content::before {
     background-color: #014917;
     background: url("~/staticc/kerala_bg.jpg")no-repeat center center/cover;
     /* z-index: -1; */
-
+    margin-left: 0%;
     /* border: 2px solid red; */
 }
 
@@ -279,7 +285,7 @@ header .content::before {
     position: absolute;
     width: 700px;
     height: auto;
-    color: #d8fcd8;
+    color: #ff4500;
     padding: 30px;
     z-index: 30;
     font-size: 16px;
@@ -303,8 +309,8 @@ header .content .cont a {
     margin-top: 30px;
     padding: 8px 20px;
     border-radius: 20px;
-    border: 2px solid rgb(1, 26, 4);
-    background: rgb(1, 26, 4);
+    border: 2px solid #ff4500;
+    background: #ff4500;
     color: white;
     outline: none;
     cursor: pointer;
@@ -316,8 +322,8 @@ header .content .cont a {
 }
 
 header .content .cont a:hover {
-    background: green;
-    border: 1px solid green;
+    background: #ff4500;
+    border: 1px solid #ff4500;
 }
 
 
@@ -340,8 +346,12 @@ header .content .cont a:hover {
     margin: 0px 20px;
     box-shadow: 0px 0px 10px rgb(10, 78, 16);
     border: 2px solid white;
-    color: white;
     opacity: 0.9;
+    background-color: #ff4500;
+    /* Orange card background */
+    box-shadow: 0px 0px 10px #ff4500;
+    color: white;
+    /* Orange card shadow */
     /* background-color: #054708; */
     /* border: 2px solid rgb(3, 46, 10); */
     /* color: black; */
@@ -362,7 +372,7 @@ header .content .cont a:hover {
     object-fit: cover;
     border-radius: 25%;
     margin-bottom: 10px;
-    border: 2px solid rgb(3, 46, 10);
+    border: 2px solid white;
     box-shadow: 0px 0px 40px rgb(167, 224, 167);
     z-index: 2;
 }
@@ -375,6 +385,7 @@ header .content .cont a:hover {
     text-decoration: underline;
     z-index: 2;
     padding-top: 15px;
+    color: white;
 }
 
 
@@ -385,6 +396,7 @@ header .content .cont a:hover {
     padding-top: 15px;
     text-align: center;
     z-index: 2;
+    /* color: #ff0000; */
 }
 
 .whole {
@@ -393,9 +405,16 @@ header .content .cont a:hover {
     margin-top: 2%;
     width: 90%;
     border: 2px solid lightgreen;
-    border-radius: 10%;
+    border-radius: 7%;
     box-shadow: 0px 0px 20px rgb(126, 190, 126);
     background-color: #054708;
+    background-color: #ff4500;
+    background-image: linear-gradient(to right, #c33907, #f8a789);
+    /* Orange background */
+    border: 2px solid white;
+    /* Orange border */
+    box-shadow: 0px 0px 20px #ff4500;
+    /* Orange shadow */
 }
 
 .trip {
@@ -411,7 +430,10 @@ header .content .cont a:hover {
 
 .trip h3 {
     font-size: 20px;
-    text-shadow: 0px 0px 10px lightgreen;
+    text-shadow: 0px 0px 10px #ff4500;
+    /* Orange text shadow */
+    /* color: #ff0000; */
+    /* Red text color */
 }
 
 .trip .info {
@@ -425,8 +447,11 @@ header .content .cont a:hover {
 .trip .info .para {
     display: flex;
     width: 50%;
-    text-shadow: 0px 0px 10px lightgreen;
+    text-shadow: 0px 0px 10px #ff4500;
+    /* Orange text shadow */
     font-size: 1.2rem;
+    /* color: #ff0000; */
+    /* Red text color */
     /* border: 1px solid red; */
     /* margin-left: 10%; */
 }
@@ -437,7 +462,10 @@ header .content .cont a:hover {
     width: 40%;
     border: 2px solid lightgreen;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px lightgreen;
+    border: 2px solid white;
+    /* Orange border around images */
+    box-shadow: 0px 0px 20px #ff4500;
+    /* Orange image shadow */
     /* margin-left: 60%; */
 }
 
@@ -465,18 +493,26 @@ header .content .cont a:hover {
     text-decoration: none;
     font-size: 13px;
     font-weight: bold;
+    background: #ff0000;
+    /* Red background */
+    border: 2px solid white;
+    /* Red border */
+    color: white;
     /* transition: .3s linear; */
 
 }
 
 .button .a:hover {
-    background: green;
-    border: 1px solid green;
+    background: #ff6347;
+    /* Tomato red background on hover */
+    border: 2px solid #ff6347;
+    /* Tomato red border on hover */
 }
 
 footer {
-    background-color: #023304;
-    color: #fff;
+    background-color: #ff0000;
+    /* Red footer background */
+    color: white;
     margin-top: 6.35%;
     padding: 20px;
     text-align: center;
@@ -489,6 +525,135 @@ footer {
 
 .row {
     text-align: center;
+}
+
+.body {
+    background-color: #f0f0f0;
+    /* Light gray background */
+}
+
+header nav h3 {
+    color: #e93e3e;
+    /* Singapore Red text color */
+}
+
+header nav h3 span {
+    color: #0044cc;
+    /* Singapore Blue text color */
+}
+
+header nav ul li:nth-last-child(1) {
+    background: #0044cc;
+    /* Singapore Blue background */
+}
+
+header nav ul li:nth-last-child(1):hover {
+    background: #0088cc;
+    /* Lighter blue background on hover */
+}
+
+header nav ul li:nth-last-child(1) a:hover {
+    color: black;
+    /* Black text color on hover */
+}
+
+header nav ul li:nth-last-child(1) a {
+    color: white;
+    /* White text color */
+}
+
+.card {
+    background-color: #e93e3e;
+    /* Singapore Red card background */
+    box-shadow: 0px 0px 10px #e93e3e;
+    /* Singapore Red card shadow */
+    color: white;
+    /* Red card text color */
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card img {
+    border: 2px solid white;
+    /* White border around images */
+    box-shadow: 0px 0px 40px #e93e3e;
+    /* Red image shadow */
+}
+
+.card h4 {
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #0044cc;
+    /* Singapore Blue text color */
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+    color: #0044cc;
+    /* Singapore Blue text color */
+}
+
+.whole {
+    background-color: #e93e3e;
+    /* Singapore Red background */
+    border: 2px solid white;
+    /* White border */
+    box-shadow: 0px 0px 20px #e93e3e;
+    /* Red shadow */
+}
+
+.trip h3 {
+    font-size: 24px;
+    text-shadow: 0px 0px 10px #e93e3e;
+    /* Red text shadow */
+    color: #e93e3e;
+    color: #0044cc;
+    /* Red text color */
+}
+
+.trip .info .para {
+    text-shadow: 0px 0px 10px #e93e3e;
+    /* Red text shadow */
+    font-size: 1.2rem;
+    color: #e93e3e;
+    color: #0044cc;
+
+    /* Red text color */
+}
+
+.trip .info img {
+    border: 2px solid white;
+    /* White border around images */
+    box-shadow: 0px 0px 20px #e93e3e;
+    /* Red image shadow */
+}
+
+.button .a {
+    background: #ff0000;
+    /* Red background */
+    border: 2px solid white;
+    /* White border */
+    color: white;
+}
+
+.button .a:hover {
+    background: #ff6347;
+    /* Tomato red background on hover */
+    border: 2px solid #ff6347;
+    /* Tomato red border on hover */
+}
+
+footer {
+    background-color: #e93e3e;
+    /* Red footer background */
+    color: white;
 }
 </style>
   
